@@ -1,9 +1,10 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState } from "react"
 import { Mic, MicOff, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { VoiceBlob } from "./voice-blob"
+import { VoiceBlob } from "./Voice-blob"
+
 
 
 
@@ -15,7 +16,8 @@ export function InputsVoice({ onTranscript, isProcessing }) {
   return (
     <div className="relative flex flex-col items-center justify-center">
       <div className="w-64 h-64 relative">
-        <VoiceBlob isListening={isListening} audioLevel={audioLevel} />
+        {/* <VoiceBlob isListening={isListening} audioLevel={audioLevel} /> */}
+        <img src="http://localhost:3001/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FbgRemoveLogoAnon.bfaa492b.png&w=1080&q=75" alt="not showing" />
       </div>
 
       <div className="absolute bottom-0 mb-4">
